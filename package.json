@@ -1,0 +1,23 @@
+{
+  "name": "breaking-bad-production-simulator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Development environment tooling for the Breaking Bad production simulator monorepo.",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "format:check": "prettier --check \"**/*.{md,json,yml,yaml}\" --ignore-path .gitignore --ignore-path .prettierignore",
+    "check-staged": "bash scripts/quality/check-staged.sh",
+    "commitlint": "commitlint",
+    "verify": "bash scripts/quality/verify.sh"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.2.3",
+    "husky": "9.1.7",
+    "lint-staged": "17.5.1",
+    "prettier": "3.9.8"
+  }
+}

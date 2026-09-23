@@ -1,0 +1,27 @@
+# Build outputs
+build/
+out/
+*.class
+.gradle/
+
+# Node tooling
+node_modules/
+
+# Local secrets and configuration overrides (never commit real values)
+.env
+.env.*
+!.env.example
+
+# Editors and OS artifacts
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage / temp
+*.tmp

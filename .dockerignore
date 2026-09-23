@@ -1,0 +1,14 @@
+.git
+.github
+.gradle
+build
+out
+node_modules
+*.log
+.env
+.env.*
+!.env.example
+specs
+.specify
+tests
+README.md
